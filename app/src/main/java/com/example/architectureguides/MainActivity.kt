@@ -1,8 +1,10 @@
 package com.example.architectureguides
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.mvp.view.MvpViewActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +20,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.mvp_button).setOnClickListener {
-
+            startActivity(
+                Intent(this, MvpViewActivity::class.java)
+            )
         }
 
         findViewById<Button>(R.id.mvvm_button).setOnClickListener {

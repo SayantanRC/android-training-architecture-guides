@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">common</string>
+    <string name="count_hint">Enter number count</string>
+
+    <string name="mvc">MVC</string>
+    <string name="mvi">MVI</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
 </resources>

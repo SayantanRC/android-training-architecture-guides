@@ -1,18 +1,14 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
     namespace 'com.example.common'
-    compileSdk 33
+    compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.example.common"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+        minSdk rootProject.ext.minSdkVersion
     }
 
     buildTypes {

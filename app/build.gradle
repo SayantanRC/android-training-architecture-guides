@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.architectureguides'
-    compileSdk 33
+    compileSdk rootProject.ext.compileSdkVersion
 
     defaultConfig {
         applicationId "com.example.architectureguides"
-        minSdk 21
-        targetSdk 33
+        minSdk rootProject.ext.minSdkVersion
+        targetSdk rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -32,4 +32,8 @@ android {
 
 dependencies {
     implementation project(":app:common")
+    implementation project(":app:mvc")
+    implementation project(":app:mvi")
+    implementation project(":app:mvp")
+    implementation project(":app:mvvm")
 }
